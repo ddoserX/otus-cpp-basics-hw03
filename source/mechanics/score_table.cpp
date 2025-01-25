@@ -87,18 +87,6 @@ void print_score_table()
     }
 }
 
-bool check_save_file_exists()
-{
-    std::ifstream fs_in{SAVE_FILE};
-    if (!fs_in.is_open())
-    {
-        return false;
-    }
-
-    fs_in.close();
-    return true;
-}
-
 bool save_score_table()
 {
     std::ofstream fs_out{SAVE_FILE, std::ios::out | std::ios::binary};

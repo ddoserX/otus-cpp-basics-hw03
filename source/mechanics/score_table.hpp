@@ -14,8 +14,6 @@ void check_and_record_score();
 
 void print_score_table();
 
-bool check_save_file_exists();
-
 bool save_score_table();
 
 bool load_score_table();
